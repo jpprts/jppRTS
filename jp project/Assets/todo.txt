@@ -1,0 +1,4 @@
+> units prioritize targets based on distance
+> minimap icons
+> limit camera movement and zoom
+> do UI in some non-retarded way

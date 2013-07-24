@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{2FB40184-5654-1592-7A83-7FC88A93B004}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_0;UNITY_4_0;UNITY_STANDALONE_WIN;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>E:/Unity4/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>E:/Unity4/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\AI\AIPath.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\AI\NavmeshController.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\AI\Seeker.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\AstarData.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\AstarMath.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\AstarPath.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\GraphUpdateScene.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\GraphUpdateShape.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\AstarDebugger.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\BinaryHeap.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\GraphEditorBase.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\GraphModifier.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\Int3.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\ListPool.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\PathPool.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Misc\StackPool.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\MultithreadClasses.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Node.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\NodeLink.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Path.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerialize.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_01.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_04.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_05.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\GraphLoaderHistory\AstarSerializer3_07.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\JsonConverters.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\Serialization\JsonSerializer.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Core\astarclasses.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\AIFollow.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\DoorController.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\DudeAI.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\DynamicGridObstacle.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\MineBotAI.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\ObjectPlacer.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\ExampleScripts\TargetMover.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\Base.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\GridGenerator.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\NavMeshGenerator.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\NodeClasses\GridNode.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\NodeClasses\MeshNode.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\PointGenerator.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\Utilities\BBTree.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\Utilities\NavMeshRenderer.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Generators\Utilities\ObjImporter.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Modifiers\AlternativePath.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Modifiers\FunnelModifier.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Modifiers\Modifiers.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Modifiers\RaycastModifier.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Modifiers\SimpleSmoothModifier.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Modifiers\StartEndModifier.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Pathfinders\ABPath.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\AstarChecksum.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\AstarMemory.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\AstarParallel.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\AstarProfiler.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\DotNetReplacements.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\GraphUpdateUtilities.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\LockFreeStack.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\PathUtilities.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\SizeProfiler.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\Utilities\UnityReferenceHelper.cs" />
+     <Compile Include="Assets\Plugins\AstarPathfindingProject\changelog.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Common\CRC.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Common\InBuffer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Common\OutBuffer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZ\IMatchFinder.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZ\LzBinTree.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZ\LzInWindow.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZ\LzOutWindow.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZMA\LzmaBase.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZMA\LzmaDecoder.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\LZMA\LzmaEncoder.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\RangeCoder\RangeCoder.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\RangeCoder\RangeCoderBit.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\RangeCoder\RangeCoderBitTree.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\Compress\SevenZipHelper.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\7zip\ICoder.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\ClickMeAndDie.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\IJsonWrapper.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\JsonData.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\JsonException.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\JsonMapper.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\JsonReader.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\JsonWriter.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\Lexer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\LitJson\ParserToken.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\RPCEnabler.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Broadcaster.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Curves.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Delegates\DelegateSupport.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Easing.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\InheritableRPC.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\LoadAnimations.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Loom.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\MonoBehaviourEx.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Radical.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\RadicalRoutine.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\RadicalRoutineHelper.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Smoothing.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Testing\Inherited.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\Testing\SimpleCaller.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\TransformExtensions.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Radical\System\XmlSupport.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\ResultLogger.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\EmptyObjectIdentifier.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Entry.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\GetSet.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\GetSetGeneric.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\GetWritableAttributes.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\IStorage.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\InRangeItem.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\JSONLevelLoader.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\JSONLevelSerializer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\JSONSerializer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\LevelLoader.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\LevelSerializer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\OnlyInRangeManager.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\PrefabIdentifier.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\RemoveEditors.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\DontStoreObjectInRoom.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\Examples\PlayerLocator.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\Examples\PlayerSpawnPoint.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\PreserveObjectWhenLoading.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\Room.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\RoomDataSaveGameStorage.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\RoomLoader.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Rooms\RoomManager.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\SaveGameManager.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\SerializationUnits.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\Storage.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\StoreInformation.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\StoreMaterials.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\StoreMesh.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\StoredReferences.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\TimeSpecialist.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\UniqueIdentifier.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\UnitySerializationExtensions.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\UnitySerializer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Serialization\prewarm.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Checksums\Adler32.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Checksums\CRC32.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Checksums\IChecksum.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Checksums\StrangeCRC.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\Deflater.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\DeflaterConstants.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\DeflaterEngine.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\DeflaterHuffman.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\DeflaterPending.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\Inflater.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\InflaterDynHeader.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\InflaterHuffmanTree.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\PendingBuffer.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\Streams\DeflaterOutputStream.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\Streams\InflaterInputStream.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\Streams\OutputWindow.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Compression\Streams\StreamManipulator.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Encryption\PkzipClassic.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Encryption\ZipAESStream.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\Encryption\ZipAESTransform.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\SharpZipBaseException.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\ZipConstants.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\ZipEntry.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\ZipExtraData.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\SharpZIP\src\ZipHelperStream.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\UnitySerializerVersion.cs" />
+     <Compile Include="Assets\Plugins\whydoidoit.com\Utility\Types.cs" />
+     <Compile Include="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
+     <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh2.shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\License.txt" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularSmooth.shader" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Multiply.shader" />
+     <None Include="Assets\todo.txt" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\DiffuseAlwaysVisible.shader" />
+     <None Include="Assets\AstarPathfindingEditor\Editor\EditorAssets\Materials\Navmesh.shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\dependencies.txt" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\_Example Scenes.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\Readme_upgrading.txt" />
+     <None Include="Assets\Plugins\whydoidoit.com\license.txt" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
+     <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\ExampleScenes\Materials\Projector Light.shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\Readme.txt" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\JsonFx\License.txt" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\Plugins\JsonFx\Readme.txt" />
+     <None Include="Assets\Standard Assets\Tessellation Shaders\BumpedSpecularDisplacement.shader" />
+     <None Include="Assets\Plugins\AstarPathfindingProject\link.xml" />
+ <Reference Include="Ionic.Zip.Reduced">
+ <HintPath>Assets\Plugins\AstarPathfindingProject\Plugins\DotNetZip\Ionic.Zip.Reduced.dll</HintPath>
+ </Reference>
+ <Reference Include="JsonFx.Json">
+ <HintPath>Assets\Plugins\AstarPathfindingProject\Plugins\JsonFx\JsonFx.Json.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

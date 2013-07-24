@@ -1,0 +1,23 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Plugins\AstarPathfindingProject\Core\AI\AIPath.cs">
+    <Files>
+      <File FileName="Assets\Plugins\AstarPathfindingProject\Core\AI\AIPath.cs" Line="251" Column="1" />
+      <File FileName="Assets\AstarPathfindingEditor\Editor\AstarPathEditor.cs" Line="496" Column="1" />
+      <File FileName="Assets\_scripts\GameManagerScript.js" Line="7" Column="1" />
+      <File FileName="Assets\_scripts\CommandsScript.js" Line="27" Column="1" />
+      <File FileName="Assets\_scripts\DudeSightRangeScript.js" Line="26" Column="2" />
+      <File FileName="Assets\_scripts\DudeScript.js" Line="206" Column="30" />
+      <File FileName="Assets\_scripts\CameraControlScript.js" Line="30" Column="30" />
+      <File FileName="Assets\_scripts\Pathfinding scripts\NavTestScript.js" Line="18" Column="34" />
+      <File FileName="Assets\_scripts\UIButtonScript.js" Line="9" Column="21" />
+      <File FileName="Assets\_scripts\Global.js" Line="2" Column="26" />
+      <File FileName="Assets\_scripts\BulletScript.js" Line="15" Column="42" />
+      <File FileName="Assets\_scripts\MinimapIconScript.js" Line="6" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
