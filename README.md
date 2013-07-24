@@ -1,4 +1,0 @@
-jppRTS
-======
-
-/jp/ project RTS
